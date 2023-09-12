@@ -56,11 +56,11 @@ export const getAllUsers = (): TPerson[] => {
 export const createProduct = (id: string, name: string, price: number, description: string, imageUrl: string): string => {
 
     const product: TProduct = {
-        id: id,
-        name: name,
-        price: price,
-        description: description,
-        imageUrl: imageUrl
+        id,
+        name,
+        price,
+        description,
+        imageUrl
     }
 
     products.push(product)
@@ -73,7 +73,7 @@ export const getAllProducts = (): TProduct[] => {
 
 export const searchProductByName = (name: string): TProduct[] => {
     const findProduct = products.filter((product) => {
-        return product.name.toLowerCase().includes(name.toLowerCase()) 
+        return product.name.toLowerCase().includes(name.toLowerCase())
     })
 
     return findProduct

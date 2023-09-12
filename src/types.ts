@@ -5,7 +5,7 @@ export type TPerson = {
     name: string,
     email: string,
     password: string,
-    createdAt: string, /* no formato ano-mês - dia T hora: minuto: segundo: milésimo - de - segundos Z) */
+    createdAt?: string, /* no formato ano-mês - dia T hora: minuto: segundo: milésimo - de - segundos Z) */
 }
 export type TProduct = {
     id: string,

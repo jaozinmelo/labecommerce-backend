@@ -3,15 +3,22 @@
   "version": "1.0.0",
   "description": "projeto labecommerce-backend",
   "main": "index.js",
-  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "go": "tsc && node ./build/index.js"
+    "go": "tsc && node build/index.js",
+    "start": "ts-node-dev src/index.ts"
   },
   "author": "jp-easley",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.17",
     "@types/node": "^20.5.9",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
   }
 }
